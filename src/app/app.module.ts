@@ -2,7 +2,24 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 import {HttpClient,HttpClientModule} from '@angular/common/http';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBJmRYwAZDExTfhiuPORIETHOVeCCOBwjs",
+  authDomain: "mail-e0aa1.firebaseapp.com",
+  projectId: "mail-e0aa1",
+  storageBucket: "mail-e0aa1.appspot.com",
+  messagingSenderId: "645574094332",
+  appId: "1:645574094332:web:c9ccad065e9b35c63dd679",
+  measurementId: "G-GB8F0C18G3"
+};
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';

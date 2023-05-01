@@ -8,7 +8,7 @@ import { Role } from '../model/role.model';
 })
 export class RoleService {
 
-  BaseUrl:string =`http://localhost:1111/role`;
+  BaseUrl:string =`http://localhost:3000/role`;
   admin_email = localStorage.getItem('email')
   admin_token = localStorage.getItem('Admin_T')
   constructor(public http:HttpClient) { }

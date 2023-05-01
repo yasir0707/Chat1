@@ -9,7 +9,7 @@ import { FileUploader } from 'ng2-file-upload';
   providedIn: 'root'
 })
 export class ChatService {
-  BaseUrl:string =`http://localhost:1111/chat/`;
+  BaseUrl:string =`http://localhost:3000/chat/`;
 
   str =    localStorage.getItem('email');
   u_str =    localStorage.getItem('useremail');

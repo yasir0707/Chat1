@@ -7,7 +7,7 @@ import { Trigger } from '../model/trigger.model';
   providedIn: 'root'
 })
 export class TriggerService {
-  BaseUrl:string =`http://localhost:1111/trigger`;
+  BaseUrl:string =`http://localhost:3000/trigger`;
   admin_email = localStorage.getItem('email')
   constructor(private http:HttpClient) { }
 

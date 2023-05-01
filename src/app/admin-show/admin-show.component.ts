@@ -99,7 +99,7 @@ download(e:any){
   // };
   const formData = new FormData();
   formData.append('img',e)
-    this.http.post<any>('http://localhost:1111/chat/read/'+e,formData).subscribe((res:any) => {
+    this.http.post<any>('http://localhost:3000/chat/read/'+e,formData).subscribe((res:any) => {
     this.downImg = res
     this.showImg = this.downImg.path
 
@@ -161,7 +161,7 @@ download(e:any){
           formData.append('useremail',this.user_email)
           // formData.append('usermsg',this.user_text)
           formData.append('adminemail',this.str)
-          this.http.post<any>('http://localhost:1111/chat/multiple',formData).subscribe((res)=>{
+          this.http.post<any>('http://localhost:3000/chat/multiple',formData).subscribe((res)=>{
             // console.log('multiple',res)
           })
           form.reset()
@@ -175,7 +175,7 @@ download(e:any){
         formData.append('useremail',this.user_email)
         // formData.append('usermsg',this.user_text)
         formData.append('adminemail',this.str)
-        this.http.post<any>('http://localhost:1111/chat/',formData).subscribe((res)=>{
+        this.http.post<any>('http://localhost:3000/chat/',formData).subscribe((res)=>{
           // console.log(res)
         })
         form.reset()
@@ -276,7 +276,7 @@ formData.append("id",this.user_id)
 
 
 
-const uri = 'http://localhost:1111/chat/'
+const uri = 'http://localhost:3000/chat/'
 @Component({
   selector: 'dialog-elements-example-dialog',
   templateUrl: './dialogBox.html',
@@ -323,7 +323,7 @@ export class dialogBox{
       formData.append('useremail',this.user_email)
       // formData.append('usermsg',this.user_text)
       formData.append('adminemail',this.str)
-      this.http.post<any>('http://localhost:1111/chat/multiple',formData).subscribe((res)=>{
+      this.http.post<any>('http://localhost:3000/chat/multiple',formData).subscribe((res)=>{
         // console.log('multiple',res)
       })
       }

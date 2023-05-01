@@ -10,8 +10,8 @@ import { Link } from '../model/link.model';
 export class AgentService {
 
   
-  BaseUrl:string =`http://localhost:1111/agent`;
-  BaseUrl1:string =`http://localhost:1111/link`;
+  BaseUrl:string =`http://localhost:3000/agent`;
+  BaseUrl1:string =`http://localhost:3000/link`;
 
   admin_email = localStorage.getItem('email')
   admin_token = localStorage.getItem('Admin_T');
